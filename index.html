@@ -21,11 +21,11 @@
         <div class="hero-section">
             <nav>
                 <div class="navbar">
-                    <div class="nav-left-box">
+                    <div class="nav-left-box nav-boxes">
                         <a href="/"><img src="/assets/default/img/logo.png" alt="logo" id="logoImg"></a>
                     </div>
         
-                    <div class="nav-center-box">
+                    <div class="nav-center-box nav-boxes">
                         <div class="nav-center-content">
                             <ul id="navLinksUl">
                                 <li><a href="/">Home</a></li>
@@ -36,13 +36,31 @@
                         </div>
                     </div>
         
-                    <div class="nav-right-box">
+                    <div class="nav-right-box nav-boxes">
                         <div class="nav-search-icon">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
                 </div>
             </nav>
+            <!-- Navbar Ended -->
+
+            <!-- Hero Section Started -->
+
+            <div class="hero-content">
+                <div class="hero-content-items">
+                    <h1 class="hero-content-title">Watch your favorite movies and series</h1>
+                    <h5>Ready to watch? Enter Movie Name...</h5>
+                    <div class="hero-search-box">
+                        <form action="/search" method="get" id="searchForm">
+                            <input type="text" name="s" id="searchInput" placeholder="Search Movie" />
+                            <button type="submit" id="searchBtn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
     </div>
 
 
