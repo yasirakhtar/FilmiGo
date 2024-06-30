@@ -26,6 +26,7 @@
     background-image: url("/assets/default/img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    max-height: 800px;
 }
 
 .hero-section{
@@ -127,5 +128,46 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90%;
+    height: 88%;
+}
+
+.hero-content .hero-content-items{
+    text-align: center;
+}
+
+.hero-content .hero-content-items h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-content .hero-content-items h5{
+    margin-top: 20px;
+}
+
+.hero-search-box{
+    margin-top: 15px;
+    height: 50px;
+}
+
+.hero-search-box form{
+    height: 100%;
+}
+
+.hero-search-box #searchInput{
+    border: 1px solid #000;
+    outline: none;
+    height: 100%;
+    width: 350px;
+    border-radius: 4px;
+    padding: 0 10px;
+    background: #00000070;
+    font-weight: 600;
+}
+
+.hero-search-box button{
+    border: none;
+    height: 100%;
+    background: var(--main-color);
+    padding: 0 30px;
+    border-radius: 4px;
 }
