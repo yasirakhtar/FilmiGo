@@ -193,6 +193,10 @@ nav{
     #sideOpen, #sideClose{
         display: block;
     }
+
+    #sideOpen{
+        color: var(--main-color);
+    }
     
     .nav-right-box{
         display: none;
@@ -205,7 +209,7 @@ nav{
         height: 100vh;
         display: block;
         background: var(--main-color);
-        visibility: hidden;
+        /* visibility: hidden; */
         z-index: 1000;
     }
 
@@ -219,6 +223,10 @@ nav{
 
     .nav-center-box .nav-center-content #navLinksUl li{
         padding: 12px 0;
+    }
+
+    .nav-center-content ul li a:hover{
+        color: var(--bd-color)
     }
 
     .nav-center-content i{
