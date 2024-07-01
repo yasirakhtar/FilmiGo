@@ -185,4 +185,18 @@ nav{
     .navbar{
         border: 1px solid #000;
     }
+
+    .nav-right-box{
+        display: none;
+    }
+
+    .nav-center-box{
+        border: 1px solid #000;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        display: block;
+    }
+    
 }
