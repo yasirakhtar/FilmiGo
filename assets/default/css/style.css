@@ -191,12 +191,19 @@ nav{
     }
 
     .nav-center-box{
-        border: 1px solid #000;
-        position: absolute;
+        position: fixed;
         right: 0;
         top: 0;
         height: 100vh;
         display: block;
+        background: var(--main-color);
     }
-    
+
+    .nav-center-box .nav-center-content #navLinksUl{
+        display: block;
+    }
+
+    .nav-center-box .nav-center-content #navLinksUl li{
+        padding: 12px 0;
+    }
 }
