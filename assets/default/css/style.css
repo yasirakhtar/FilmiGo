@@ -180,12 +180,20 @@ nav{
     background: var(--link-h-color);
 }
 
+#sideOpen, #sideClose{
+    display: none;
+}
+
 
 @media only screen and (max-width: 998px) {
     .navbar{
         border: 1px solid #000;
     }
 
+    #sideOpen, #sideClose{
+        display: block;
+    }
+    
     .nav-right-box{
         display: none;
     }
@@ -197,6 +205,12 @@ nav{
         height: 100vh;
         display: block;
         background: var(--main-color);
+        visibility: hidden;
+        z-index: 1000;
+    }
+
+    .nav-center-content{
+        padding: 15px;
     }
 
     .nav-center-box .nav-center-content #navLinksUl{
@@ -205,5 +219,15 @@ nav{
 
     .nav-center-box .nav-center-content #navLinksUl li{
         padding: 12px 0;
+    }
+
+    .nav-center-content i{
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    .navbar #sideOpen{
+        font-size: 26px;
+        cursor: pointer;
     }
 }
