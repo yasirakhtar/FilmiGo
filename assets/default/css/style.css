@@ -185,7 +185,7 @@ nav{
 }
 
 
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 888px) {
     .navbar{
         border: 1px solid #000;
     }
@@ -204,7 +204,7 @@ nav{
 
     .nav-center-box{
         position: fixed;
-        right: 0;
+        right: -500px;
         top: 0;
         height: 100vh;
         display: block;
@@ -237,5 +237,35 @@ nav{
     .navbar #sideOpen{
         font-size: 26px;
         cursor: pointer;
+    }
+
+    .hero-content .hero-content-title{
+        font-size: 32px !important;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .hero-content .hero-content-title{
+        font-size: 26px !important;
+        padding: 0 10px;
+    }
+
+    .hero-content h5{
+        font-size: 16px;
+        /* margin-top: 10px !important; */
+    }
+
+    .hero-search-box{
+        height: auto;
+    }
+
+    .hero-search-box #searchInput{
+        height: 46px;
+        width: 80%;
+    }
+
+    .hero-search-box button{
+        height: 40px;
+        margin-top: 15px;
     }
 }

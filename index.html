@@ -25,11 +25,11 @@
                         <a href="/"><img src="/assets/default/img/logo.png" alt="logo" id="logoImg"></a>
                     </div>
 
-                    <i class="fa-solid fa-bars" id="sideOpen"></i>
+                    <i class="fa-solid fa-bars" id="sideOpen" onclick="openMenu();"></i>
         
-                    <div class="nav-center-box nav-boxes">
+                    <div class="nav-center-box nav-boxes" id="navMenu">
                         <div class="nav-center-content">
-                            <i class="fa-solid fa-xmark" id="sideClose"></i>
+                            <i class="fa-solid fa-xmark" id="sideClose" onclick="closeMenu();"></i>
                             <ul id="navLinksUl">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/search?s=movies">Latest Movies</a></li>
