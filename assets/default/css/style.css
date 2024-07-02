@@ -276,3 +276,13 @@ nav{
         margin-top: 15px;
     }
 }
+
+/* recent-movies */
+
+.recent-movies{
+    border: 1px solid #000;
+    padding: 30px 0 !important;
+    width: 90%;
+    margin: auto;
+    max-width: 1550px;
+}
