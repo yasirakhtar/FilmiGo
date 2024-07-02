@@ -206,7 +206,6 @@ nav{
         height: 100vh;
         display: block;
         background: var(--main-color);
-        /* visibility: hidden; */
         z-index: 1000;
     }
 
@@ -238,6 +237,13 @@ nav{
 
     .hero-content .hero-content-title{
         font-size: 32px !important;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .hero-section-main{
+        max-height: 500px;
     }
 }
 
