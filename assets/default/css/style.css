@@ -352,9 +352,65 @@ nav{
 /* recent-movies */
 
 .recent-movies{
-    border: 1px solid #000;
     padding: 30px 0 !important;
     width: 90%;
     margin: auto;
     max-width: 1550px;
+}
+
+.recent-row{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie{
+    height: 370px;
+    width: 19%;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--main-color);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.movie a{
+    text-decoration: none;
+}
+
+.movie a:hover .movie-img-box img{
+    width: 105%;
+}
+
+.movie-link-box{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.movie-img-box{
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+}
+
+.movie-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.movie-title-box p{
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    margin-top: 8px;
 }
