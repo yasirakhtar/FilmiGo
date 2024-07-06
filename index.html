@@ -16,6 +16,20 @@
      <link rel="stylesheet" href="/assets/default/css/style.css">
 </head>
 <body>
+
+    <!-- PopUp Search Box -->
+
+    <div class="search-box-main" id="searchPopupBoxMain">
+        <div class="container search" id="searchPopupBox">
+            <i class="fa-solid fa-xmark" id="searchBoxClose" onclick="closeSearchPopUpBox();"></i>
+            <form action="/search" method="get" id="PopUpSearchForm">
+                <input type="text" name="s" id="searchInput" placeholder="Enter Movie Name.." autocomplete="off" required />
+                <button type="submit" id="searchBtn">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- PopUp Search Box End -->
     
     <div class="hero-section-main">
         <div class="hero-section">
@@ -41,7 +55,7 @@
         
                     <div class="nav-right-box nav-boxes">
                         <div class="nav-search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass" onclick="openSearchPopUpBox();"></i>
                         </div>
                     </div>
                 </div>
