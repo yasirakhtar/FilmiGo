@@ -359,6 +359,10 @@ nav{
     margin-top: 40px;
 }
 
+.recent-movies{
+    margin-top: 0;
+}
+
 .category-title{
     font-size: 26px;
     font-weight: 700;
@@ -381,7 +385,7 @@ nav{
     border-radius: 8px;
     background: var(--main-color);
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .movie a{
