@@ -426,3 +426,27 @@ nav{
     -webkit-line-clamp: 2;
     margin-top: 8px;
 }
+
+.show-more-btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-more-btn-box a{
+    background: var(--main-color);
+    color: var(--primary-color);
+    padding: 8px 30px !important;
+    font-weight: 700;
+    border: 1px solid var(--main-color) !important;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.recent-movies{
+    padding-bottom: 0px !important;
+}
+
+.show-more-btn-box a:hover{
+    background: transparent;
+}
