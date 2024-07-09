@@ -380,6 +380,7 @@ nav{
     gap: 4px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .movie{
@@ -453,6 +454,33 @@ nav{
 
 .show-more-btn-box a:hover{
     background: transparent;
+}
+
+@media only screen and (max-width: 888px){
+    .popular-movies, .recent-movies{
+        border: 1px solid #000;
+    }
+
+    .popular-row, .recent-row{
+        border: 1px solid #000;
+        flex-wrap: wrap;
+    }
+
+    .movie{
+        width: 49% !important;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .movie{
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .movie{
+        height: 300px;
+    }
 }
 
 
