@@ -471,6 +471,10 @@ nav{
     .movie{
         margin-bottom: 15px;
     }
+
+    .movie-img-box{
+        height: 81%;
+    }
 }
 
 @media only screen and (max-width: 460px){
@@ -578,6 +582,12 @@ footer{
 @media only screen and (max-width: 900px){
     .footer-box{
         flex-wrap: wrap;
+        gap: 40px 100px;
+    }
+
+    .footer-left{
+        width: 90%;
+        margin: 0 !important;
     }
 }
 
@@ -585,5 +595,41 @@ footer{
     .footer-box{
         gap: 30px;
         flex-direction: column;
+    }
+
+    .footer-left{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .movie{
+        height: 250px;
+    } 
+
+    .movie p{
+        font-size: 12px !important; 
+    }
+
+    .movie-img-box{
+        height: 80%;
+    }
+
+    .footer-left{
+        height: auto;
+    }
+
+    .footer-about-box{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+
+    .footer-about-box div{
+        width: 100%;
+        text-align: center;
     }
 }
