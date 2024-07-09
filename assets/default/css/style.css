@@ -457,12 +457,8 @@ nav{
 }
 
 @media only screen and (max-width: 888px){
-    .popular-movies, .recent-movies{
-        border: 1px solid #000;
-    }
 
     .popular-row, .recent-row{
-        border: 1px solid #000;
         flex-wrap: wrap;
     }
 
