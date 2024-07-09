@@ -274,6 +274,9 @@ nav{
 
     #sideOpen{
         color: var(--main-color);
+        position: absolute;
+        top: 20px;
+        right: 30px;
     }
     
     .nav-right-box{
