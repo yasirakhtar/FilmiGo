@@ -107,12 +107,6 @@ body{
     border-bottom: 5px solid var(--main-color) !important;
 }
 
-.movie-hero-section{
-    background-image: none;
-    height: auto;
-    border-bottom: 1px solid var(--main-color) !important;
-}
-
 .hero-section{
     height: 100%;
     width: 100%;
@@ -641,4 +635,13 @@ footer{
         width: 100%;
         text-align: center;
     }
+}
+
+/* Movie Page */
+
+
+.movie-hero-section{
+    background-image: none;
+    height: auto;
+    border-bottom: 1px solid var(--main-color) !important;
 }
