@@ -639,19 +639,13 @@ footer{
 
 /* Movie Page */
 
-
 .movie-hero-section{
     background-image: none;
     height: auto;
     border-bottom: 1px solid var(--main-color) !important;
 }
 
-.movie-section-main{
-    /* border: 1px solid #000; */
-}
-
 .movie-section{
-    /* border: 1px solid #000; */
     width: 90%;
     max-width: 1550px;
     margin: auto;
@@ -659,10 +653,6 @@ footer{
     justify-content: space-between;
     padding: 30px 10px;
     gap: 15px;
-}
-
-.movie-left, .movie-right{
-    /* border: 1px solid #000; */
 }
 
 .movie-left{
@@ -802,6 +792,11 @@ footer{
 .how-to-btn-box a, .how-to-btn-box a i{
     background: var(--main-color);
     color: var(--primary-color);
+    background: #ff00514f;
+}
+
+.how-to-btn-box a{
+    padding: 8px 28px !important;
 }
 
 .how-to-btn-box a:hover, .how-to-btn-box a:hover i{
@@ -809,10 +804,7 @@ footer{
     background: none;
 }
 
-
-
-
-
+/* movie-right-content */
 
 .movie-right{
     width: 30%;
@@ -844,4 +836,9 @@ footer{
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+hr{
+    border-color: #ff005146 !important;
+    margin: 35px 0 !important;
 }
