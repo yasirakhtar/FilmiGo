@@ -778,6 +778,7 @@ footer{
     height: 460px;
     position: sticky;
     top: 70px;
+    cursor: pointer;
 }
 
 .movie-poster img{
@@ -785,4 +786,8 @@ footer{
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.download-link-box{
+    border: 1px solid #000;
 }
