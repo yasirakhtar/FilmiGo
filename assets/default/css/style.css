@@ -742,7 +742,7 @@ footer{
 }
 
 .download-links-box-main{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin-top: 40px;
 }
 
@@ -752,6 +752,49 @@ footer{
     margin-bottom: 20px;
 }
 
+.download-link-box{
+    border: 1px solid #000;
+}
+
+.dl-box{
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    justify-content: center;
+}
+
+.dl-text-box p{
+    font-weight: 600;
+}
+
+.dl-btn-box a{
+    display: inline-flex;
+    gap: 10px;
+    border: 1px solid var(--main-color) !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: var(--main-color);
+}
+
+.dl-btn-box a i{
+    color: var(--main-color);
+}
+
+.dl-btn-box a:hover, .dl-btn-box a:hover i{
+    color: var(--link-h-color);
+    border-color: var(--link-h-color) !important;
+}
+
+.dl-box div{
+    border: 1px solid #000;
+    width: 40%;
+    padding: 12px 20px;
+}
+
+.dl-btn-box{
+    border-left: 1px solid #000;
+}
 
 
 
@@ -786,8 +829,4 @@ footer{
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-}
-
-.download-link-box{
-    border: 1px solid #000;
 }
