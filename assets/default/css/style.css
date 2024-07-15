@@ -855,6 +855,7 @@ hr{
     .movie-right{
         width: 100%;
         margin-bottom: 30px;
+        display: none;      /*Tablet Version*/
     }
 
     .movie-right .movie-right-content{
@@ -862,6 +863,7 @@ hr{
     }
 
     .movie-poster{
-        width: 50%;
+        width: 250px;
+        height: 370px;
     }
 }
