@@ -842,3 +842,30 @@ hr{
     border-color: #ff005146 !important;
     margin: 35px 0 !important;
 }
+
+@media only screen and (max-width: 888px){
+    .movie-section{
+        border: 1px solid #000;
+        flex-direction: column-reverse;
+    }
+
+    .movie-left{
+        border: 1px solid #000;
+        width: 100%;
+    }
+
+    .movie-right{
+        border: 1px solid #000;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .movie-right .movie-right-content{
+        justify-content: center;
+    }
+
+    .movie-poster{
+        border: 1px solid #000;
+        width: 50%;
+    }
+}
