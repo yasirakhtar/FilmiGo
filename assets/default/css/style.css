@@ -855,7 +855,8 @@ hr{
     .movie-right{
         width: 100%;
         margin-bottom: 30px;
-        display: none;      /*Tablet Version*/
+        /*Tablet Version*/
+        /* display: none; */
     }
 
     .movie-right .movie-right-content{
@@ -865,5 +866,46 @@ hr{
     .movie-poster{
         width: 250px;
         height: 370px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .ss-boxes{
+        height: 130px;
+    }
+
+    .download-links-box-main{
+    }
+
+    .download-link-box{
+    }
+
+    .dl-box{
+        padding-left: 0;
+    }
+
+    .dl-box div{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .ss-boxes{
+        height: 130px;
+    }
+
+    .dl-box{
+        flex-direction: column;
+        border: 1px solid #ff00517c !important;
+        padding-bottom: 10px;
+    }
+
+    .dl-box div{
+        width: 100%;
+        justify-content: center;
+        border: none !important;
+        height: 50px;
     }
 }
