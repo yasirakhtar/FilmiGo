@@ -639,7 +639,7 @@ footer{
 
 /* Movie Page */
 
-.movie-hero-section{
+.all-hero-section{
     background-image: none;
     height: auto;
     border-bottom: 1px solid var(--main-color) !important;
