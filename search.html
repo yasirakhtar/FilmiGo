@@ -24,7 +24,7 @@
             <i class="fa-solid fa-xmark" id="searchBoxClose" onclick="closeSearchPopUpBox();"></i>
             <form action="/search" method="get" id="PopUpSearchForm">
                 <input type="text" name="s" id="searchInput" placeholder="Enter Movie Name.." autocomplete="off" required />
-                <button type="submit" id="searchBtn">Search</button>
+                <button type="submit" id="searchBtn" onclick="search();">Search</button>
             </form>
         </div>
     </div>
@@ -239,6 +239,16 @@
 
 
     <!-- JavaScript -->
+
+    <script>
+        let searchText = document.getElementById("searchInput").value;
+
+        function search(){
+            let searchText = document.getElementById("searchInput").value;
+            alert("Your Search Text = " + searchText) 
+        }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="/assets/default/js/script.js"></script>
 </body>
