@@ -23,7 +23,7 @@
         <div class="container search" id="searchPopupBox">
             <i class="fa-solid fa-xmark" id="searchBoxClose" onclick="closeSearchPopUpBox();"></i>
             <form action="/search" method="get" id="PopUpSearchForm">
-                <input type="text" name="s" id="searchInput" placeholder="Enter Movie Name.." autocomplete="off" required />
+                <input type="text" name="s" id="searchInput" onkeyup="search();" placeholder="Enter Movie Name.." autocomplete="off" required />
                 <button type="submit" id="searchBtn" onclick="search();">Search</button>
             </form>
         </div>
@@ -69,7 +69,7 @@
     <div class="recent-movies" id="recentMovies">
         <div class="recent-movies-box">
             <h2 class="category-title">All Movies</h2>
-            <div class="recent-row">
+            <div class="recent-row" id="allMovies">
                 <div class="movie">
                     <a href="#" class="movie-link">
                         <div class="movie-link-box">
@@ -242,9 +242,17 @@
 
     <script>
         function search(){
-            let searchText = document.getElementById("searchInput").value;
-            alert("Your Search Text = " + searchText); 
-            console.log("Your Search Text = " + searchText);
+            let searchText = document.getElementById("searchInput").value.toLowerCase();
+            let movies = document.querySelectorAll(".movie");
+
+            movies.forEach(movie => {
+                let title = movie.querySelector(".movie-title-box p").innerText.toLowerCase();
+                if(title.includes(searchText)){
+                    movie.style.display = "block";
+                } else {
+                    movie.style.display = "none";
+                }
+            });
         }
     </script>
     <script src="/assets/default/js/script.js"></script>
