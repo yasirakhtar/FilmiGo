@@ -241,13 +241,34 @@
     <!-- JavaScript -->
 
     <script>
-        function search(){
-            let searchText = document.getElementById("searchInput").value.toLowerCase();
-            let movies = document.querySelectorAll(".movie");
+        document.addEventListener("DOMContentLoaded", function() {
+            let urlParams = new URLSearchParams(window.location.search);
+            let searchText = urlParams.get('s');
+            if (searchText) {
+                document.getElementById("searchInput").value = searchText;
+                performSearch(searchText);
+            }
+        });
 
+        function search() {
+            let searchText = document.getElementById("searchInput").value.toLowerCase();
+            updateUrl(searchText);
+            performSearch(searchText);
+        }
+
+        function updateUrl(searchText) {
+            let queryParam = encodeURIComponent(searchText);
+            if (history.pushState) {
+                let newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?s=' + queryParam;
+                history.pushState({path: newUrl}, '', newUrl);
+            }
+        }
+
+        function performSearch(searchText) {
+            let movies = document.querySelectorAll(".movie");
             movies.forEach(movie => {
                 let title = movie.querySelector(".movie-title-box p").innerText.toLowerCase();
-                if(title.includes(searchText)){
+                if (title.includes(searchText)) {
                     movie.style.display = "block";
                 } else {
                     movie.style.display = "none";
