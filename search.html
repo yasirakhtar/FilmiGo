@@ -268,8 +268,11 @@
             let movies = document.querySelectorAll(".movie");
             movies.forEach(movie => {
                 let title = movie.querySelector(".movie-title-box p").innerText.toLowerCase();
+                let allMovies = document.getElementById("allMovies");
                 if (title.includes(searchText)) {
                     movie.style.display = "block";
+                    allMovies.style.justifyContent = "left";
+                    allMovies.style.gap = "10px";
                 } else {
                     movie.style.display = "none";
                 }
