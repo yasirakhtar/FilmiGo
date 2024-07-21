@@ -83,10 +83,10 @@
 
     <!-- Popular Movies -->
 
-    <div class="popular-movies" id="popularMovies">
+    <div class="popular-movies" id="popularMoviesMain">
         <div class="popular-movies-box">
             <h2 class="category-title">Popular Movies</h2>
-            <div class="popular-row">
+            <div class="popular-row" id="popularMovies">
                 <div class="movie">
                     <a href="#" class="movie-link" id="movieLink">
                         <div class="movie-link-box">
@@ -160,132 +160,7 @@
         <div class="recent-movies-box">
             <h2 class="category-title">Recent Movies</h2>
             <div class="recent-row" id="recentMovies">
-                <div class="movie">
-                    <a href="#" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Spider-Man.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Spider-Man: No Way Home At The End Of Point Now We Ready To Play</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="movie">
-                    <a href="#" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Ant-Man.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Ant-Man: Point Now We Ready To Play</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="movie">
-                    <a href="#" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Avengers-Infinity-War.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Avengers-Infinity-War: We Ready To End War</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="movie">
-                    <a href="#" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Black-Panther-2018.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Black-Panther-2018</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="movie">
-                    <a href="#" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Black-Panther-Wakanda-Forever-2022.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Black Panther Wakanda: No Way Home At The End Of Point Now We Ready To Play</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="movie">
-                    <a href="#" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Spider-Man.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Spider-Man: No Way Home At The End Of Point Now We Ready To Play</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="movie">
-                    <a href="#" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Ant-Man.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Ant-Man: Point Now We Ready To Play</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="movie">
-                    <a href="#" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Avengers-Infinity-War.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Avengers-Infinity-War: We Ready To End War</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="movie">
-                    <a href="#" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Black-Panther-2018.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Black-Panther-2018</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="movie">
-                    <a href="#" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Black-Panther-Wakanda-Forever-2022.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Black Panther Wakanda: No Way Home At The End Of Point Now We Ready To Play</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Second Row Of Recent Movies -->
-
-            <div class="recent-row">
-                
+                <!-- Recent Movies -->
             </div>
         </div>
     </div>
@@ -336,134 +211,11 @@
 
     <!-- Footer Section End  -->
 
-    <script>
-        const dataDiv = document.getElementById('recentMovies');
-    
-    
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = () => {
-            if (xhttp.readyState == 4 && xhttp.status == 200) {
-                let data = JSON.parse(xhttp.responseText);
-    
-                dataDiv.innerHTML = `${data.slice(0, 15).map((curElem) => {
-    
-                    return (
-                        `<div class="movie">
-                    <a href="${curElem.link}" title="${curElem.p_text}" class="movie-link" id="movieLink">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="${curElem.img}" alt="${curElem.id}" loading="lazy">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>${curElem.p_text}</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>`
-                    )
-                }).join("")}`
-            } else {
-                dataDiv.innerHTML = `
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-        `
-            }
-        }
-        xhttp.open("GET", "/json/all_post.json", true);
-        xhttp.send();
-    </script>
 
 
     <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="/assets/default/js/script.js"></script>
+    <script src="assets/default/js/recentMovies.js"></script>
+    <script src="assets/default/js/popularMovies.js"></script>
 </body>
 </html>

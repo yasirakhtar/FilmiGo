@@ -75,18 +75,7 @@
         <div class="recent-movies-box">
             <h2 class="category-title">All Movies</h2>
             <div class="recent-row" id="allMovies">
-                <div class="movie">
-                    <a href="#" class="movie-link">
-                        <div class="movie-link-box">
-                            <div class="movie-img-box">
-                                <img src="/assets/poster/Spider-Man.jpg">
-                            </div>
-                            <div class="movie-title-box">
-                                <p>Spider-Man: No Way Home At The End Of Point Now We Ready To Play</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+        
             </div>
         </div>
     </div>
@@ -135,133 +124,9 @@
 
 
 
-    <!-- JavaScript -->
-
-    <!-- Post Json -->
-    <script>
-        const dataDiv = document.getElementById('allMovies');
-
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = () => {
-            if (xhttp.readyState == 4 && xhttp.status == 200) {
-                let data = JSON.parse(xhttp.responseText);
-
-                dataDiv.innerHTML = `${data.map((curElem) => {
-
-                    return (
-                        `<div class="movie">
-                            <a href="${curElem.link}" title="${curElem.p_text}" class="movie-link">
-                                <div class="movie-link-box">
-                                    <div class="movie-img-box">
-                                        <img src="${curElem.img}" alt="${curElem.searchtag}" loading="lazy">
-                                    </div>
-                                    <div class="movie-title-box">
-                                        <p>${curElem.p_text}</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>`
-                    )
-                }).join("")}`
-            } else {
-                dataDiv.innerHTML = `
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-                <div class="mov_box">
-                    <div class="loding">
-                        <div class="img_lod"></div>
-                        <div class="text_lod"></div>
-                    </div>
-                </div>
-        `
-            }
-        }
-        xhttp.open("GET", "/json/all_post.json", true);
-        xhttp.send();
-    </script>
+    <!-- JavaScript -->    
     <script src="/assets/default/js/script.js"></script>
+    <script src="/assets/default/js/allMovies.js"></script>
 </body>
 
 </html>

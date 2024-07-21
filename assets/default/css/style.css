@@ -910,3 +910,31 @@ hr{
         height: 50px;
     }
 }
+
+
+/*Loading Effect*/
+
+.loading .movie-img-box {
+    width: 100%;
+    animation: loadAnimation 0.9s infinite;
+    height: 78%;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.loading .movie-title-box {
+    width: 100%;
+    animation: loadAnimation 0.8s infinite;
+    height: 17%;
+    border-radius: 6px;
+}
+
+@keyframes loadAnimation {
+    0% {
+        background: transparent;
+    }
+
+    100% {
+        background: #0000002e;
+    }
+}
