@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-function search() {
-    let searchText = document.getElementById("searchInput").value.toLowerCase();
-    updateUrl(searchText);
-    performSearch(searchText);
-}
+// function search() {
+//     let searchText = document.getElementById("searchInput").value.toLowerCase();
+//     updateUrl(searchText);
+//     performSearch(searchText);
+// }
 
 function updateUrl(searchText) {
     let queryParam = encodeURIComponent(searchText);

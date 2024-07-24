@@ -22,6 +22,7 @@ xhttp.onreadystatechange = () => {
                         </div>`
             )
         }).join("")}`
+        search_animal()
     } else {
         dataDiv.innerHTML = `
                 <div class="movie loading">
