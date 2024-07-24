@@ -394,6 +394,7 @@ nav{
     background: var(--main-color);
     padding: 8px;
     margin-bottom: 30px;
+    /* display: none; */
 }
 
 .movie a{
