@@ -939,3 +939,34 @@ hr{
         background: #0000002e;
     }
 }
+
+#title b{
+    color: #ababab;
+}
+
+/* ----------404 page---------- */
+
+.notFound{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.notFound-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notFound-row p{
+    /* font-size: 15vw !important */
+    font-size: 186px;
+    color: var(--main-color);
+}
+
+.notFound h3{
+    color: var(--primary-color);
+}
+
+.notFound h5{
+    color: #ababab;
+}
