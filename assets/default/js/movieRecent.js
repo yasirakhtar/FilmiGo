@@ -66,5 +66,5 @@ movieRecents.onreadystatechange = () => {
                 </div>`
     }
 }
-movieRecents.open("GET", "/json/all_post.json", true);
+movieRecents.open("GET", "/json/allMovies.json", true);
 movieRecents.send();

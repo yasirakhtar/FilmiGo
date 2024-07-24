@@ -22,7 +22,7 @@
     <div class="search-box-main" id="searchPopupBoxMain">
         <div class="container search" id="searchPopupBox">
             <i class="fa-solid fa-xmark" id="searchBoxClose" onclick="closeSearchPopUpBox();"></i>
-            <form action="/search.html" method="get" id="PopUpSearchForm">
+            <form action="/search/" method="get" id="PopUpSearchForm">
                 <input type="text" name="s" id="searchInput" placeholder="Enter Movie Name.." autocomplete="off" required />
                 <button type="submit" id="searchBtn">Search</button>
             </form>
@@ -46,8 +46,8 @@
                             <i class="fa-solid fa-xmark" id="sideClose" onclick="closeMenu();"></i>
                             <ul id="navLinksUl">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/search?s=movies">Latest Movies</a></li>
-                                <li><a href="/search?s=series">Web Series</a></li>
+                                <li><a href="/search/?s=movies">Latest Movies</a></li>
+                                <li><a href="/search/?s=series">Web Series</a></li>
                                 <li><a href="/contact">Contact</a></li>
                             </ul>
                         </div>
@@ -69,7 +69,7 @@
                     <h1 class="hero-content-title">Watch your favorite movies and series</h1>
                     <h5>Ready to watch? Enter Movie Name...</h5>
                     <div class="hero-search-box">
-                        <form action="/search.html" method="get" id="searchForm">
+                        <form action="/search/" method="get" id="searchForm">
                             <input type="text" name="s" id="searchInput" placeholder="Search Movie.." autocomplete="off" required />
                             <button type="submit" id="searchBtn">
                                 Search
@@ -189,8 +189,8 @@
                     <h3>Important Pages</h3>
                     <div class="footer-links-box">
                         <a href="/contact">Contact</a>
-                        <a href="/search?s=series">Web Series</a>
-                        <a href="/search?s=movies">Latest Movies</a>
+                        <a href="/search/?s=series">Web Series</a>
+                        <a href="/search/?s=movies">Latest Movies</a>
                     </div>
                 </div>
                 <div class="footer-col">

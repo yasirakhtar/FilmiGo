@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://bit.ly/yasirlogo" type="image/x-icon">
+    <title>FilmiGo</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/assets/default/css/style.css">
+</head>
+
+<body>
+
+    <!-- PopUp Search Box -->
+
+    <div class="search-box-main" id="searchPopupBoxMain">
+        <div class="container search" id="searchPopupBox">
+            <i class="fa-solid fa-xmark" id="searchBoxClose" onclick="closeSearchPopUpBox();"></i>
+            <form action="/search/" method="get" id="PopUpSearchForm">
+                <input type="text" name="s" id="searchInput" onkeyup="search();" placeholder="Enter Movie Name.."
+                    autocomplete="off" required />
+                <button type="submit" id="searchBtn" onclick="search();">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- PopUp Search Box End -->
+
+    <div class="hero-section-main all-hero-section">
+        <div class="hero-section">
+            <nav>
+                <div class="navbar">
+                    <div class="nav-left-box nav-boxes">
+                        <a href="/"><img src="/assets/default/img/logo.png" alt="logo" id="logoImg"></a>
+                    </div>
+
+                    <i class="fa-solid fa-bars" id="sideOpen" onclick="openMenu();"></i>
+
+                    <div class="nav-center-box nav-boxes" id="navMenu">
+                        <div class="nav-center-content">
+                            <i class="fa-solid fa-xmark" id="sideClose" onclick="closeMenu();"></i>
+                            <ul id="navLinksUl">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/search/?s=movies">Latest Movies</a></li>
+                                <li><a href="/search/?s=series">Web Series</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nav-right-box nav-boxes">
+                        <div class="nav-search-icon">
+                            <i class="fa-solid fa-magnifying-glass" onclick="openSearchPopUpBox();"></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar Ended -->
+        </div>
+    </div>
+
+    <!-- Recent Movies -->
+
+    <div class="recent-movies" id="recentMovies">
+        <div class="recent-movies-box">
+            <h2 class="category-title" id="title">All Movies</h2>
+            <div class="recent-row" id="allMovies">
+        <!-- All Movies Posted Here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="notFound" id="notFound">
+        <div class="notFound-row">
+            <p>4</p>
+
+            <p>0</p>
+            <p>4</p>
+        </div>
+        <h3> Nothing Found </h3>
+        <br>
+        <h5>Sorry, but nothing matched your search terms. Please try again with some different keywords.</h5>
+    </div>
+
+    <!-- Footer Section Started  -->
+
+    <footer id="footer">
+        <div class="footer-box">
+            <div class="footer-left">
+                <div class="footer-about-box">
+                    <div class="footer-about-img-box">
+                        <img src="/assets/default/img/footer-img.png" alt="">
+                    </div>
+                    <div class="footer-about-text">
+                        <h3>Yasir Akhtar</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, itaque.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="footer-right"> -->
+            <div class="footer-col">
+                <h3>Important Pages</h3>
+                <div class="footer-links-box">
+                    <a href="/contact">Contact</a>
+                    <a href="/search/?s=series">Web Series</a>
+                    <a href="/search/?s=movies">Latest Movies</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Our Websites</h3>
+                <div class="footer-links-box">
+                    <a href="https://mxfly.site">MxFly.site</a>
+                    <a href="https://filmigo.in">FilmiGo.in</a>
+                    <a href="https://reminimod.site">Reminimod.site</a>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2024. Made by - <a href="/">Yasir Akhtar</a></p>
+        </div>
+    </footer>
+
+    <!-- Footer Section End  -->
+
+
+    <!-- JavaScript -->    
+    <script src="/assets/default/js/script.js"></script>
+    <script src="/assets/default/js/allMovies.js"></script>
+</body>
+
+</html>

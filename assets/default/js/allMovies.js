@@ -107,5 +107,5 @@ xhttp.onreadystatechange = () => {
                 </div>`
     }
 }
-xhttp.open("GET", "/json/all_post.json", true);
+xhttp.open("GET", "/json/allMovies.json", true);
 xhttp.send();
