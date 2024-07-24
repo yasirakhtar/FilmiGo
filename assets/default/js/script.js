@@ -12,6 +12,7 @@ var searchPopupBoxMain = document.getElementById("searchPopupBoxMain");
 
 function openSearchPopUpBox() {
     searchPopupBoxMain.style.display = "flex";
+    document.getElementById("searchInput").focus();
 }
 
 function closeSearchPopUpBox() {
