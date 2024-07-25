@@ -10,6 +10,7 @@ xhttp.onreadystatechange = () => {
         // let urlParams = new URLSearchParams(window.location.search);
         // let hasdata = urlParams.get('movie');
         // let data_filter = data.filter(element => element.hastag == hasdata);
+        let defaultSsImg = '/assets/screenshot/a6WEFIDPkhSZyBU_1716612231.jpg';
 
         dataDiv.innerHTML = `${data_filter.map((curElem) => {
             document.title = `${curElem.p_text}`;
@@ -35,10 +36,10 @@ xhttp.onreadystatechange = () => {
                         <h3>Screenshots: (Must See Before Downloading)…</h3>
 
                         <div class="screenshot-box">
-                            <div class="ss-boxes"><img src="${curElem.screenimg}" alt="${curElem.name} screenshot - 1" id="ss1"></div>
-                            <div class="ss-boxes"><img src="${curElem.screenimg2}" alt="${curElem.name} screenshot - 2" id="ss2"></div>
-                            <div class="ss-boxes"><img src="${curElem.screenimg3}" alt="${curElem.name} screenshot - 3" id="ss3"></div>
-                            <div class="ss-boxes"><img src="${curElem.screenimg4}" alt="${curElem.name} screenshot - 4" id="ss4"></div>
+                            <div class="ss-boxes"><img src="${curElem.screenimg || defaultSsImg}" alt="${curElem.name} screenshot - 1" id="ss1"></div>
+                            <div class="ss-boxes"><img src="${curElem.screenimg2 || defaultSsImg}" alt="${curElem.name} screenshot - 2" id="ss2"></div>
+                            <div class="ss-boxes"><img src="${curElem.screenimg3 || defaultSsImg}" alt="${curElem.name} screenshot - 3" id="ss3"></div>
+                            <div class="ss-boxes"><img src="${curElem.screenimg4 || defaultSsImg}" alt="${curElem.name} screenshot - 4" id="ss4"></div>
                         </div>
 
                     </div>
