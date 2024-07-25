@@ -22,6 +22,7 @@ body{
     --link-h-color: #dd0046;
     --footer-bg-color: rgb(38, 38, 38);
     --footer-link-color: rgb(171, 171, 171);
+    --side-widget-shadow: 1px 1px 4px 0 rgba(255, 255, 255, 0.12);
 }
 
 .none{
@@ -1055,7 +1056,89 @@ hr{
 .contact-row .contact-right{
     width: 28%;
 }
-.contact-row div{
-    /* border: 1px solid #000; */
 
+.contact-right-sticky{
+    position: sticky;
+    top: 40px;
+}
+
+/* ------- Email Collect ----- */
+
+.collect-email-main {
+    /* margin-top: 30px; */
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: var(--side-widget-shadow);
+}
+
+.collect-email {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(122 122 122 / 0.53) !important;
+    position: relative;
+}
+
+.collect-email::before {
+    content: '🔔';
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ce0142;
+    box-sizing: border-box;
+    padding: 3px;
+    font-size: 14px;
+    color: transparent;
+    text-shadow: 0 0 0 #fff;
+}
+
+.collect-email .collect-email-heading {
+    margin: 15px 0;
+    padding: 7px;
+    padding-top: 15px;
+    font-family: poppins, sans-serif;
+}
+
+.collect-email .collect-email-span {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #cacaca;
+}
+
+.collect-email .collect-email-inputs {
+    margin-top: 20px;
+}
+
+.collect-email-inputs form{
+    display: flex;
+    flex-direction: column;
+}
+
+.collect-email .collect-email-inputs input {
+    height: 32px;
+    font-size: 11px;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin: 0 0 10px;
+    border: 1px solid rgb(122 122 122 / 0.53) !important;
+    background: transparent;
+    outline: none;
+}
+
+.collect-email .collect-email-inputs .collect-email-input:focus {
+    border-color: #ff004f !important;
+}
+
+.collect-email .collect-email-inputs .collect-email-btn {
+    background: #ff004f;
+    border: none !important;
+    cursor: pointer;
 }
