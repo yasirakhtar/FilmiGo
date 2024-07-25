@@ -841,7 +841,9 @@ footer{
 
 hr{
     border-color: #ff005146 !important;
-    margin: 35px 0 !important;
+    margin: 35px auto !important;
+    border-top: none !important;
+    width: 98%;
 }
 
 @media only screen and (max-width: 888px){
@@ -969,4 +971,91 @@ hr{
 
 .notFound h5{
     color: #ababab;
+}
+
+/* --------- Contact Page ---------- */
+
+.contact-box-main{
+    width: 90%;
+    margin: auto;
+    max-width: 1550px;
+    margin-top: 40px;
+}
+
+.contact-content-box .category-title{
+    margin-bottom: 6px;
+}
+
+.contact-content-box .contact-description-box .contact-description{
+    font-size: .9rem;
+    color: #ababab;
+}
+
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.contact-row .contact-left{
+    width: 70%;
+}
+
+.contact-left table{
+    border-collapse: collapse;
+    border-color: var(--main-color) !important;
+}
+
+.contact-left table tr td{
+    padding: 18px 15px;
+    border-color: var(--main-color) !important;
+}
+
+.contact-left table tr td h3{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: 500;
+}
+
+.contact-left table tr td p{
+    color: var(--main-color);
+    font-size: 1.25rem;
+}
+
+.ofc-mail p{
+    letter-spacing: 1px;
+}
+
+.contact-left table tr td a p{
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-left table tr td a:hover p{
+    color: var(--main-color);
+}
+
+.stay-connected-table-box{
+    margin-top: 20px;
+}
+
+.stay-connect-tr td:first-child {
+    width: 55%;
+}
+
+.stay-connect-tr td{
+    text-align: center;
+}
+
+
+
+.contact-row .contact-right{
+    width: 28%;
+}
+.contact-row div{
+    /* border: 1px solid #000; */
+
 }
