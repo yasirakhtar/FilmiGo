@@ -50,3 +50,18 @@ let searchUrl = window.location.search.slice(3)
         }
 
         searchMovie();
+
+// Open Search Box 
+
+const mobileSearch = document.getElementsById("mobileSearch");
+
+function ShowSearchInput(){
+    if(mobileSearch.style.display == "none"){
+        mobileSearch.style.display = "block";
+    }
+    else{
+        mobileSearch.style.display = "none";
+    }
+}
+
+ShowSearchInput();
