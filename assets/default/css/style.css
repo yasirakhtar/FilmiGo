@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+* a{
+    text-decoration: none !important;
+}
+
 body{
     background: #080808;
     overflow-x: hidden;
@@ -1399,6 +1403,44 @@ hr{
 @media (min-width: 1024px){
     #notification{
         bottom: 20px;
+        animation: fadeRight 0.9s 1;
+    }
+
+    @keyframes fadeRight {
+        from{
+            transform: translateX(100%);
+        }
+
+        to{
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes fadeLeft {
+        from{
+            transform: translateX(0%);
+        }
+
+        to{
+            transform: translateX(120%);
+        }
+    }
+
+    #notification{
+        height: auto;
+        padding-bottom: 0 !important;
+    }
+
+    #notification a{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #notification img{
+        height: 60px;
+        width: 60px;
+        border-radius: 4px;
     }
 }
 

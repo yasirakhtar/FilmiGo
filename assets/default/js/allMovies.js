@@ -12,7 +12,7 @@ xhttp.onreadystatechange = () => {
                             <a href="${curElem.link}" title="${curElem.p_text}" class="movie-link">
                                 <div class="movie-link-box">
                                     <div class="movie-img-box">
-                                        <img src="${curElem.img}" alt="${curElem.searchtag}" loading="lazy">
+                                        <img src="${curElem.img}" onerror="src='/assets/default/img/poster.jpg'" alt="${curElem.searchtag}" loading="lazy">
                                     </div>
                                     <div class="movie-title-box">
                                         <p>${curElem.p_text}</p>

@@ -77,7 +77,7 @@ xhttp.onreadystatechange = () => {
                                     <p>How To Download - </p>
                                 </div>
                                 <div class="dl-btn-box how-to-btn-box">
-                                    <a href="#" class="how-to-link" id="howToLink">Click Here</a>
+                                    <a href="/help/how-to-download" class="how-to-link" id="howToLink">Click Here</a>
                                 </div>
                             </div>
                             <div class="dl-box">
@@ -85,7 +85,7 @@ xhttp.onreadystatechange = () => {
                                     <p>Join Our Telegram Channel - </p>
                                 </div>
                                 <div class="dl-btn-box how-to-btn-box">
-                                    <a href="#" class="telegram-link" id="telegramLink">Click Here</a>
+                                    <a href="https://t.me/FilmiGoSite" class="telegram-link" id="telegramLink">Click Here</a>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ xhttp.onreadystatechange = () => {
             <div class="movie-right">
                 <div class="movie-right-content">
                     <div class="movie-poster">
-                        <img src="${curElem.img}" alt="${curElem.name}" id="moviePoster">
+                        <img src="${curElem.img}"  onerror="src='/assets/default/img/poster.jpg'" alt="${curElem.name}" id="moviePoster">
                     </div>
                 </div>
             </div>`
