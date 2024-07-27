@@ -10,7 +10,7 @@ xhttp.onreadystatechange = () => {
         // let urlParams = new URLSearchParams(window.location.search);
         // let hasdata = urlParams.get('movie');
         // let data_filter = data.filter(element => element.hastag == hasdata);
-        let defaultSsImg = '/assets/screenshot/a6WEFIDPkhSZyBU_1716612231.jpg';
+        let defaultSsImg = '/assets/default/img/screenshot.jpg';
 
         dataDiv.innerHTML = `${data_filter.map((curElem) => {
             document.title = `${curElem.p_text}`;

@@ -14,7 +14,7 @@ messageLink.href = channelLink;
 
 // Create the image
 const notificationImage = document.createElement('img');
-notificationImage.src = 'https://via.placeholder.com/150';
+notificationImage.src = '/assets/advertisement/img/channel-logo.jpg';
 
 // Create the close button
 const closeButton = document.createElement('button');
