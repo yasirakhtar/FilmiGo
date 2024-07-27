@@ -77,7 +77,7 @@ xhttp.onreadystatechange = () => {
                                     <p>How To Download - </p>
                                 </div>
                                 <div class="dl-btn-box how-to-btn-box">
-                                    <a href="/help/how-to-download" class="how-to-link" id="howToLink">Click Here</a>
+                                    <a href="/blog/how-to-download" class="how-to-link" id="howToLink">Click Here</a>
                                 </div>
                             </div>
                             <div class="dl-box">
