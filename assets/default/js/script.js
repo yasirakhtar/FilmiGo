@@ -8,15 +8,20 @@ function closeMenu() {
     navMenu.style.right = "-500px";
 }
 
-var searchPopupBoxMain = document.getElementById("searchPopupBoxMain");
+var mobileSearch = document.getElementById("mobileSearch");
 
 function openSearchPopUpBox() {
-    searchPopupBoxMain.style.display = "flex";
-    document.getElementById("searchInput").focus();
+    if(mobileSearch.style.display == "block"){
+        mobileSearch.style.display = "none";
+    }
+    else{
+        mobileSearch.style.display = "block";
+        document.getElementById("searchInput").focus();
+    }
 }
 
 function closeSearchPopUpBox() {
-    searchPopupBoxMain.style.display = "none";
+    mobileSearch.style.display = "none";
 }
 
 // search Js
@@ -53,15 +58,13 @@ let searchUrl = window.location.search.slice(3)
 
 // Open Search Box 
 
-const mobileSearch = document.getElementsById("mobileSearch");
+// const mobileSearch = document.getElementsById("mobileSearch");
 
-function ShowSearchInput(){
-    if(mobileSearch.style.display == "none"){
-        mobileSearch.style.display = "block";
-    }
-    else{
-        mobileSearch.style.display = "none";
-    }
-}
-
-ShowSearchInput();
+// function ShowSearchInput(){
+//     if(mobileSearch.style.display == "none"){
+//         mobileSearch.style.display = "block";
+//     }
+//     else{
+//         mobileSearch.style.display = "none";
+//     }
+// }
