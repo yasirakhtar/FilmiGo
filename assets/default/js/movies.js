@@ -53,7 +53,7 @@ xhttp.onreadystatechange = () => {
                                     <p>Download In 480p - </p>
                                 </div>
                                 <div class="dl-btn-box">
-                                    <a href="${curElem.down480p}" id="link480"><i class="fa fa-download"></i>Download</a>
+                                    <a href="${curElem.down480p}" target="_blank" id="link480"><i class="fa fa-download"></i>Download</a>
                                 </div>
                             </div>
                             <div class="dl-box">
@@ -61,7 +61,7 @@ xhttp.onreadystatechange = () => {
                                     <p>Download In 720p - </p>
                                 </div>
                                 <div class="dl-btn-box">
-                                    <a href="${curElem.down720p}" id="link720"><i class="fa fa-download"></i>Download</a>
+                                    <a href="${curElem.down720p}" target="_blank" id="link720"><i class="fa fa-download"></i>Download</a>
                                 </div>
                             </div>
                             <div class="dl-box">
@@ -69,7 +69,7 @@ xhttp.onreadystatechange = () => {
                                     <p>Download In 1080p - </p>
                                 </div>
                                 <div class="dl-btn-box">
-                                    <a href="${curElem.down1080p}" id="link1080"><i class="fa fa-download"></i>Download</a>
+                                    <a href="${curElem.down1080p}" target="_blank" id="link1080"><i class="fa fa-download"></i>Download</a>
                                 </div>
                             </div>
                             <div class="dl-box">
@@ -77,7 +77,7 @@ xhttp.onreadystatechange = () => {
                                     <p>How To Download - </p>
                                 </div>
                                 <div class="dl-btn-box how-to-btn-box">
-                                    <a href="/blog/how-to-download" class="how-to-link" id="howToLink">Click Here</a>
+                                    <a href="/blog/how-to-download" target="_blank" class="how-to-link" id="howToLink">Click Here</a>
                                 </div>
                             </div>
                             <div class="dl-box">
@@ -85,7 +85,7 @@ xhttp.onreadystatechange = () => {
                                     <p>Join Our Telegram Channel - </p>
                                 </div>
                                 <div class="dl-btn-box how-to-btn-box">
-                                    <a href="https://t.me/FilmiGoSite" class="telegram-link" id="telegramLink">Click Here</a>
+                                    <a href="https://t.me/FilmiGoSite" target="_blank" class="telegram-link" id="telegramLink">Click Here</a>
                                 </div>
                             </div>
                         </div>
