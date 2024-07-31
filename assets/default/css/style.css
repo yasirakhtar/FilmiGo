@@ -1495,3 +1495,18 @@ hr{
         max-width: 500px;
     }
 }
+
+/* ------------- Disclaimer Page ----------- */
+
+.disclaimer-content{
+}
+
+.disclaimer-content h3{
+    margin-bottom: 8px;
+}
+
+.disclaimer-content p{
+    font-size: .9rem;
+    color: #ababab;
+    margin-bottom: 25px;
+}
